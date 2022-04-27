@@ -1,0 +1,75 @@
+/* ==========================================================================
+Header
+========================================================================== */
+
+$header-background: #f8f9fa;
+$header-hover: #ee0000;
+
+.header {
+  text-align: center;
+  background-color: $header-background;
+  .header-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+    .header-nav {
+      .header-logo {
+        .header-logo_img {
+          height: 48px;
+        }
+      }
+
+      .nav {
+        justify-content: space-between;
+        align-items: center;
+
+        .nav-item {
+          text-transform: uppercase;
+          .nav-item-text {
+            text-decoration: none;
+            color: #000000;
+            font-weight: 500;
+          }
+
+          .btn {
+            background-color: $header-background;
+            outline: none;
+            border: none;
+            color: $header-hover;
+            font-weight: 500;
+            &:focus {
+              box-shadow: none;
+            }
+          }
+
+          .dropdown-menu {
+            min-width: 0;
+            border: none;
+            &:before {
+              content: '';
+              position: absolute;
+              top: -18%;
+              /* background-color: black; */
+              z-index: 2;
+              display: block;
+              width: 16px;
+              height: 16px;
+              transform: rotate(-45deg) translateY(1rem);
+              border-radius: 3px;
+              background: #fff;
+              box-shadow: none;
+            }
+            .dropdown-item:hover {
+              background-color: white;
+              color: $header-hover;
+            }
+          }
+
+          .nav-item-text:hover {
+            color: $header-hover;
+          }
+        }
+      }
+    }
+  }
+}
