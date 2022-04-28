@@ -37,11 +37,13 @@ if (Modernizr.touch === true && window.innerWidth <= 767) {
     $('.section1-js').slick({
       dots: true,
       infinite: true,
-      speed: 300,
+      speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      //autoplay: true,
-      //autoplaySpeed: 7000,
+      autoplay: true,
+      autoplaySpeed: 6000,
+      centerMode: true,
+      arrows: false,
       responsive: [
         {
           breakpoint: 1024,

@@ -11140,7 +11140,7 @@ Header
 ========================================================================== */
 .header {
   text-align: center;
-  background-color: #f8f9fa;
+  background-color: rgba(105, 102, 135, 0.1);
 }
 .header .header-wrapper {
   padding-top: 20px;
@@ -11162,21 +11162,28 @@ Header
   color: #000000;
   font-weight: 500;
 }
-.header .header-wrapper .header-nav .nav .nav-item .btn {
-  background-color: #f8f9fa;
+.header .header-wrapper .header-nav .nav .nav-item .nav-item-text:hover {
+  text-decoration: none;
+  color: #ee0000;
+  font-weight: 500;
+}
+.header .header-wrapper .header-nav .nav .nav-item .dropdown .btn {
   outline: none;
   border: none;
   color: #ee0000;
   font-weight: 500;
 }
-.header .header-wrapper .header-nav .nav .nav-item .btn:focus {
+.header .header-wrapper .header-nav .nav .nav-item .dropdown .btn:focus {
   box-shadow: none;
 }
-.header .header-wrapper .header-nav .nav .nav-item .dropdown-menu {
+.header .header-wrapper .header-nav .nav .nav-item .dropdown .btn-secondary {
+  background-color: #f0f0f0;
+}
+.header .header-wrapper .header-nav .nav .nav-item .dropdown .dropdown-menu {
   min-width: 0;
   border: none;
 }
-.header .header-wrapper .header-nav .nav .nav-item .dropdown-menu:before {
+.header .header-wrapper .header-nav .nav .nav-item .dropdown .dropdown-menu:before {
   content: "";
   position: absolute;
   top: -18%;
@@ -11190,11 +11197,8 @@ Header
   background: #fff;
   box-shadow: none;
 }
-.header .header-wrapper .header-nav .nav .nav-item .dropdown-menu .dropdown-item:hover {
+.header .header-wrapper .header-nav .nav .nav-item .dropdown .dropdown-menu .dropdown-item:hover {
   background-color: white;
-  color: #ee0000;
-}
-.header .header-wrapper .header-nav .nav .nav-item .nav-item-text:hover {
   color: #ee0000;
 }
 
@@ -11205,29 +11209,40 @@ Content
   display: none;
 }
 
-.section1 .section1-js {
+.main {
+  background-color: rgba(105, 102, 135, 0.1);
+}
+
+.section1 .section1-wrapper .section1-js {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
 }
-.section1 .section1-js .section1-js-text {
+.section1 .section1-wrapper .section1-js .section1-js-text {
   position: absolute;
 }
-.section1 .section1-js .section1-js-img {
+.section1 .section1-wrapper .section1-js .section1-js-img {
   transition: transform 0.2s;
   /* Animation */
 }
-.section1 .section1-js .section1-js-img:hover {
+.section1 .section1-wrapper .section1-js .section1-js-img:hover {
   transform: scale(1.3);
 }
 
+.section2 .section2-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .section2 .section2-wrapper .section2-title {
   text-align: center;
   color: #CC0033;
   font-weight: 600;
   font-size: 2rem;
+  padding: 40px;
 }
 .section2 .section2-wrapper .section2-content {
   position: relative;
+  width: fit-content;
 }
 .section2 .section2-wrapper .section2-content .background {
   position: relative;
@@ -11243,7 +11258,7 @@ Content
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .section2 .section2-wrapper .section2-content .img-content .section2-img {
   height: 100%;
@@ -11256,12 +11271,14 @@ Content
   text-align: center;
   color: #CC0033;
   font-weight: 500;
-  padding-top: 10px;
-  padding-bottom: 100px;
+  padding: 40px 0;
   font-size: 2rem;
 }
 .section3 .row {
   justify-content: center;
+}
+.section3 .row .section3-block_item {
+  padding: 0 10px 20px 10px;
 }
 .section3 .row .section3-block_item .card {
   align-items: center;
@@ -11271,6 +11288,16 @@ Content
 }
 .section3 .row .section3-block_item .card .card-img-top {
   width: 45%;
+  position: relative;
+  padding-top: 10%;
+}
+.section3 .row .section3-block_item .card .card-text {
+  text-align: center;
+}
+.section3 .row .section3-block_item .card .card-img-black {
+  position: absolute;
+  top: 0;
+  display: none;
 }
 .section3 .row .section3-block_item .card .card-body {
   display: flex;
@@ -11279,6 +11306,243 @@ Content
 .section3 .row .section3-block_item .card:hover {
   background-color: #000000;
   color: white;
+}
+.section3 .row .section3-block_item .card:hover .card-img-black {
+  display: block;
+}
+.section3 .row .section3-block_item .card:hover .card-img {
+  display: none;
+}
+.section3 .row .section3-block_item .card:hover .card-body {
+  padding-top: 25%;
+}
+
+.section4 .section4-wrapper .section4-title {
+  text-align: center;
+  color: #CC0033;
+  font-weight: 500;
+  padding: 40px 0;
+  font-size: 2rem;
+}
+.section4 .section4-wrapper .section4-content .col-md-3 .card {
+  padding: 20px 0;
+  margin: 24px 0;
+  text-align: center;
+  border-radius: 10px;
+}
+.section4 .section4-wrapper .section4-content .col-md-3 .card .card-body .card-title {
+  font-size: 60px;
+  color: #cc0033;
+  font-weight: 600;
+}
+.section4 .section4-wrapper .section4-content .col-md-3 .card .card-body .card-text {
+  color: #3A3564;
+  font-size: 18px;
+}
+.section5 .section5-wrapper {
+  /* The actual timeline (the vertical ruler) */
+  /* Container around content */
+  /* The circles on the timeline */
+  /* Place the container to the left */
+  /* Place the container to the right */
+  /* Add arrows to the left container (pointing right) */
+  /* Add arrows to the right container (pointing left) */
+  /* Fix the circle for containers on the right side */
+  /* The actual content */
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+}
+.section5 .section5-wrapper .section5-title {
+  text-align: center;
+  color: #CC0033;
+  font-weight: 500;
+  padding: 40px 0;
+  font-size: 2rem;
+}
+.section5 .section5-wrapper .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section5 .section5-wrapper .timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.section5 .section5-wrapper .container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+.section5 .section5-wrapper .container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.section5 .section5-wrapper .left {
+  left: -25%;
+}
+.section5 .section5-wrapper .left h2, .section5 .section5-wrapper .left .h2 {
+  color: #CC0033;
+}
+.section5 .section5-wrapper .left::after {
+  background-color: #CC0033;
+}
+.section5 .section5-wrapper .right {
+  left: 25%;
+}
+.section5 .section5-wrapper .right h2, .section5 .section5-wrapper .right .h2 {
+  color: #000000;
+}
+.section5 .section5-wrapper .right:after {
+  background-color: #000000;
+}
+.section5 .section5-wrapper .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+.section5 .section5-wrapper .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+.section5 .section5-wrapper .right::after {
+  left: -16px;
+}
+.section5 .section5-wrapper .content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+@media screen and (max-width: 600px) {
+  .section5 .section5-wrapper {
+    /* Place the timelime to the left */
+    /* Full-width containers */
+    /* Make sure that all arrows are pointing leftwards */
+    /* Make sure all circles are at the same spot */
+    /* Make all right containers behave like the left ones */
+  }
+  .section5 .section5-wrapper .timeline::after {
+    left: 31px;
+  }
+  .section5 .section5-wrapper .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .section5 .section5-wrapper .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  .section5 .section5-wrapper .left::after, .section5 .section5-wrapper .right::after {
+    left: 15px;
+  }
+  .section5 .section5-wrapper .right {
+    left: 0%;
+  }
+}
+
+.section6 .section6-wrapper .section6-title {
+  text-align: center;
+  color: #CC0033;
+  font-weight: 500;
+  padding: 40px 0;
+  font-size: 2rem;
+}
+.section6 .section6-wrapper .section6-content .row .section6-item .section6-item-wrapper {
+  width: fit-content;
+}
+.section6 .section6-wrapper .section6-content .row .section6-item .section6-item-wrapper .section6-img-black {
+  position: relative;
+}
+.section6 .section6-wrapper .section6-content .row .section6-item .section6-item-wrapper .section6-img {
+  filter: grayscale(1);
+  transition: all 0.3s;
+}
+.section6 .section6-wrapper .section6-content .row .section6-item:hover .section6-item-wrapper .section6-img {
+  filter: grayscale(0);
+}
+
+.section7 .section7-wrapper .section7-tittle {
+  text-align: center;
+  color: #CC0033;
+  font-weight: 500;
+  padding: 40px 0;
+  font-size: 2rem;
+}
+.section7 .section7-wrapper .section7-content .row .section7-item .card .card-body .card-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+.section7 .section7-wrapper .section7-btn {
+  display: flex;
+  justify-content: center;
+}
+.section7 .section7-wrapper .section7-btn .btn {
+  background-color: #CC0033;
+  margin: 40px 0;
+  border: none;
+}
+.section7 .section7-wrapper .section7-btn .btn .section7-btn-link {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.section8 .section8-wrapper .row .section8-img {
+  width: 100%;
+}
+.section8 .section8-wrapper .row .section8-form .section8-form-tittle {
+  text-align: center;
+  color: #CC0033;
+  font-weight: 500;
+  padding: 40px 0;
+  font-size: 2rem;
+}
+.section8 .section8-wrapper .row .section8-form .section8-form-btn {
+  display: flex;
+  justify-content: center;
+}
+.section8 .section8-wrapper .row .section8-form .section8-form-btn .btn {
+  background-color: #CC0033;
+  margin: 40px 0;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 15px 30px;
 }
 
 /* ==========================================================================

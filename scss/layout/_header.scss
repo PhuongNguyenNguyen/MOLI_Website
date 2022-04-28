@@ -2,12 +2,12 @@
 Header
 ========================================================================== */
 
-$header-background: #f8f9fa;
+$color-header: rgba(#696687,0.1);
 $header-hover: #ee0000;
 
 .header {
   text-align: center;
-  background-color: $header-background;
+  background-color: $color-header;
   .header-wrapper {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -25,48 +25,58 @@ $header-hover: #ee0000;
 
         .nav-item {
           text-transform: uppercase;
+
           .nav-item-text {
             text-decoration: none;
             color: #000000;
             font-weight: 500;
           }
-
-          .btn {
-            background-color: $header-background;
-            outline: none;
-            border: none;
+          .nav-item-text:hover {
+            text-decoration: none;
             color: $header-hover;
             font-weight: 500;
-            &:focus {
-              box-shadow: none;
-            }
           }
 
-          .dropdown-menu {
-            min-width: 0;
-            border: none;
-            &:before {
-              content: '';
-              position: absolute;
-              top: -18%;
-              /* background-color: black; */
-              z-index: 2;
-              display: block;
-              width: 16px;
-              height: 16px;
-              transform: rotate(-45deg) translateY(1rem);
-              border-radius: 3px;
-              background: #fff;
-              box-shadow: none;
-            }
-            .dropdown-item:hover {
-              background-color: white;
+          .dropdown {
+            .btn {
+              outline: none;
+              border: none;
               color: $header-hover;
-            }
-          }
+              font-weight: 500;
 
-          .nav-item-text:hover {
-            color: $header-hover;
+              &:focus {
+                box-shadow: none;
+              }
+            }
+            .btn-secondary
+            {
+              background-color: #f0f0f0;
+            }
+
+            .dropdown-menu {
+              min-width: 0;
+              border: none;
+
+              &:before {
+                content: '';
+                position: absolute;
+                top: -18%;
+                /* background-color: black; */
+                z-index: 2;
+                display: block;
+                width: 16px;
+                height: 16px;
+                transform: rotate(-45deg) translateY(1rem);
+                border-radius: 3px;
+                background: #fff;
+                box-shadow: none;
+              }
+
+              .dropdown-item:hover {
+                background-color: white;
+                color: $header-hover;
+              }
+            }
           }
         }
       }
