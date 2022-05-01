@@ -333,49 +333,46 @@ $background-color: rgba(#696687,0.1);
 
       /* Make all right containers behave like the left ones */
       .right {
-        left: 0%;
+        left: 0;
       }
     }
   }
 }
 .section6
 {
-  .section6-wrapper
-  {
-    .section6-title
-    {
+  .container {
+    display: flex;
+    justify-content: center;
+    .section6-wrapper {
       text-align: center;
-      color: $primary-color;
-      font-weight: 500;
-      padding: 40px 0;
-      font-size: 2rem;
-    }
-    .section6-content
-    {
-      .row {
-        .section6-item {
-          .section6-item-wrapper {
-            width: fit-content;
-            .section6-img-black {
-              position: relative;
-            }
+      .section6-title {
+        text-align: center;
+        color: $primary-color;
+        font-weight: 500;
+        padding: 40px 0;
+        font-size: 2rem;
+      }
 
-            .section6-img {
-              //display: none;
-              filter: grayscale(1);
-              transition: all .3s;
+      .section6-content {
+        .row {
+          .section6-item {
+            display: flex;
+            justify-content: center;
+            .section6-item-wrapper {
+              .section6-img {
+                //display: none;
+                filter: grayscale(1);
+                transition: all .3s;
+                width: 50%;
+              }
             }
           }
-        }
 
-        .section6-item:hover {
-          .section6-item-wrapper {
-            .section6-img-black {
-              //display: none;
-            }
-
-            .section6-img {
-              filter: grayscale(0);
+          .section6-item:hover {
+            .section6-item-wrapper {
+              .section6-img {
+                filter: grayscale(0);
+              }
             }
           }
         }
@@ -385,84 +382,96 @@ $background-color: rgba(#696687,0.1);
 }
 .section7
 {
-  .section7-wrapper {
-    .section7-tittle {
-      text-align: center;
-      color: $primary-color;
-      font-weight: 500;
-      padding: 40px 0;
-      font-size: 2rem;
-    }
+  .container {
+    display: flex;
+    justify-content: center;
+    .section7-wrapper {
+      width: 85%;
+      .section7-tittle {
+        text-align: center;
+        color: $primary-color;
+        font-weight: 500;
+        padding: 40px 0;
+        font-size: 2rem;
+      }
 
-    .section7-content {
-      .row {
-        .section7-item {
-          .card {
-            .card-body {
-              .card-title {
-                text-transform: uppercase;
-                text-align: center;
-                font-weight: 700;
+      .section7-content {
+        .row {
+          .section7-item {
+            .card {
+              .card-body {
+                .card-title {
+                  text-transform: uppercase;
+                  text-align: center;
+                  font-weight: 700;
+                  font-size: 1rem;
+                }
               }
             }
+
           }
-
+        }
         }
       }
-    }
 
-    .section7-btn {
-      display: flex;
-      justify-content: center;
-      .btn {
-        background-color: $primary-color;
-        margin: 40px 0;
-        border: none;
-        .section7-btn-link
-        {
-          text-transform: uppercase;
-          font-size: 0.8rem;
-          font-weight: 500;
-          padding: 15px 30px;
-          text-decoration: none;
-          color: #ffffff;
-        }
-      }
-    }
-  }
-}
-
-.section8
-{
-  .section8-wrapper
-  {
-    .row {
-      .section8-img {
-        width: 100%;
-      }
-
-      .section8-form {
-        .section8-form-tittle
-        {
-          text-align: center;
-          color: $primary-color;
-          font-weight: 500;
-          padding: 40px 0;
-          font-size: 2rem;
-        }
-        .section8-form-btn
-        {
-          display: flex;
-          justify-content: center;
-          .btn
+      .section7-btn {
+        display: flex;
+        justify-content: center;
+        .btn {
+          background-color: $primary-color;
+          margin: 40px 0;
+          border: none;
+          .section7-btn-link
           {
-            background-color: $primary-color;
-            margin: 40px 0;
-            border: none;
             text-transform: uppercase;
             font-size: 0.8rem;
             font-weight: 500;
             padding: 15px 30px;
+            text-decoration: none;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+}
+
+.section8
+{
+    .container
+    {
+      display: flex;
+      justify-content: center;
+    .section8-wrapper {
+      width: 85%;
+      padding: 40px 0;
+      .row {
+        .section8-img {
+          width: 100%;
+        }
+
+        .section8-form {
+          .section8-form-tittle {
+            text-align: center;
+            color: $primary-color;
+            font-weight: 500;
+            padding: 10px 0;
+            font-size: 2rem;
+          }
+
+          .section8-form-btn {
+            display: flex;
+            justify-content: center;
+
+            .btn {
+              background-color: $primary-color;
+              margin: 40px 0;
+              border: none;
+              border-radius: 10px;
+              text-transform: uppercase;
+              font-size: 0.8rem;
+              font-weight: 500;
+              padding: 15px 30px;
+            }
           }
         }
       }
@@ -473,69 +482,100 @@ $background-color: rgba(#696687,0.1);
 .footer
 {
   background-color: $black-color;
-  .footer-wrapper
-  {
-    .footer-title
-    {
-      .footer-title-item
-      {
-        color: #ffffff;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 20px;
-      }
-    }
-    .footer-content
-    {
-     .footer-content-items
-     {
-         color: #ffffff;
-       .footer-logo
-       {
-          padding: 10px 0 ;
-       }
-       .footer-content-items_text
-       {
-          padding: 10px 0;
-       }
-       .footer-content-connect
-       {
-         .footer-content-connect_wrapper
-         {
-           .connect-tittle
-           {
-             font-size: 20px;
-             font-weight: 600;
-             text-transform: uppercase;
-             padding-bottom: 10px;
-           }
-           .connect-icon
-           {
-             display: flex;
-             justify-content: space-around;
-             width: 30%;
-             a
-             {
-               color: #ffffff;
-             }
-           }
-         }
-       }
-       .footer-content-items-block
-       {
-         padding: 10px 0;
-         .footer-content-items-block-tittle
-         {
-           text-transform: uppercase;
-           font-size: 18px;
-         }
-         .footer-content-items-block-content
-         {
-           font-size: 14px;
-         }
-       }
+  .container {
+    display: flex;
+    justify-content: center;
+    .footer-wrapper {
+      width: 85%;
+      .footer-title {
+        padding: 20px 0;
 
-     }
+        .footer-title-item {
+          color: #ffffff;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 20px;
+        }
+      }
+
+      .footer-content {
+        padding: 20px 0;
+
+        .footer-content-items {
+          color: #ffffff;
+
+          .footer-logo {
+            padding: 10px 0;
+          }
+
+          .footer-content-items_text {
+            padding: 10px 0;
+          }
+
+          .footer-content-connect {
+            .footer-content-connect_wrapper {
+              .connect-tittle {
+                font-size: 20px;
+                font-weight: 600;
+                text-transform: uppercase;
+                padding-bottom: 10px;
+              }
+
+              .connect-icon {
+                display: flex;
+                justify-content: space-around;
+                width: 30%;
+
+                a {
+                  color: #ffffff;
+                }
+              }
+            }
+          }
+
+          .footer-content-items-block {
+            padding: 10px 0;
+
+            .footer-content-items-block-tittle {
+              font-size: 18px;
+              text-transform: uppercase;
+            }
+
+            .footer-content-items-block-content {
+              font-size: 14px;
+
+              p {
+                margin-bottom: 0;
+              }
+            }
+
+            .footer-content-items-block-content p:hover {
+              color: $primary-color;
+            }
+          }
+
+          .footer-content-items-tittle {
+            font-size: 16px;
+            text-transform: uppercase;
+            padding: 2px;
+
+            a {
+              text-decoration: none;
+              color: #ffffff;
+            }
+          }
+
+          .footer-content-items-tittle a:hover {
+            color: $primary-color;
+          }
+        }
+      }
+
+      .footer-copyright {
+        color: #ffffff;
+        text-align: center;
+        padding: 20px 0;
+      }
     }
   }
 }
