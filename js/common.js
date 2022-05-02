@@ -85,8 +85,8 @@ if (Modernizr.touch === true && window.innerWidth <= 767) {
       cssEase: 'linear',
       autoplay: true,
       autoplaySpeed: 3000,
+      arrows: false,
     });
-
   }
 
   function init() {

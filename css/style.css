@@ -11217,14 +11217,38 @@ Content
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
 }
-.section1 .section1-wrapper .section1-js .section1-js-text {
+.section1 .section1-wrapper .section1-js .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section1 .section1-wrapper .section1-js .slick-slide .section1-js-text {
   position: absolute;
+  z-index: 1;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.section1 .section1-wrapper .section1-js .section1-js-img {
-  transition: transform 0.2s;
+.section1 .section1-wrapper .section1-js .slick-slide .section1-js-text .section1-js-text_tittle {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+.section1 .section1-wrapper .section1-js .slick-slide .section1-js-text .section1-js-text_subtittle {
+  font-size: 1.3rem;
+  width: 60%;
+}
+.section1 .section1-wrapper .section1-js .slick-slide .section1-js-link {
+  width: fit-content;
+  position: relative;
+}
+.section1 .section1-wrapper .section1-js .slick-slide .section1-js-link .section1-js-img {
+  transition: all 8s;
   /* Animation */
+  width: 100%;
 }
-.section1 .section1-wrapper .section1-js .section1-js-img:hover {
+.section1 .section1-wrapper .section1-js .slick-slide .section1-js-img:hover {
   transform: scale(1.3);
 }
 
