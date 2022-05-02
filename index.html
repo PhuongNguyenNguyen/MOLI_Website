@@ -121,7 +121,48 @@
   <header class='header'>
     <div class="container">
       <div class="header-wrapper">
-          <div class="menu-mobile"></div>
+        <div class="menu-mb">
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <!--<h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>-->
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <ul class="mobile-menu">
+                  <li class="mobile-menu_line">
+                    <a href="" target="_blank" class="mobile-menu-line_text">ABOUT US</a>
+                  </li>
+                  <li class="mobile-menu_line">
+                    <a href="" target="_blank" class="mobile-menu-line_text">ECOSYSTEM</a>
+                  </li>
+                  <li class="mobile-menu_line">
+                    <a href="" target="_blank" class="mobile-menu-line_text">MILESTONE</a>
+                  </li>
+                  <li class="mobile-menu_line">
+                    <a href="" target="_blank" class="mobile-menu-line_text">CONTACT</a>
+                  </li>
+                  <li class="mobile-menu_line">
+                    <a href="" target="_blank" class="mobile-menu-line_text">RECRUITMENT</a>
+                  </li>
+                </ul>
+              </div>
+              <!--<div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>-->
+            </div>
+          </div>
+        </div>
         <div class="header-nav">
           <ul class="nav">
             <li class="nav-item">
@@ -165,10 +206,10 @@
   </header>
 
   <main class='main' id='main'>
-    <div class="section1">
+    <div class="section1 section-common">
       <div class="container">
         <div class="section1-wrapper">
-          <div class="section1-js section-common">
+          <div class="section1-js">
             <div>
               <a class="section1-js-link" target="_blank" href="#"><img class="section1-js-img" src="images/bg/moli-company1.jpg" alt="moli-1" title=""></a>
               <div class="section1-js-text">
@@ -212,7 +253,6 @@
                 <p>Moli Group – a full-service digital media and tech company. Founded in 2019, with nearly 200 professional members of staff, we offer a wide range of digital and technological services. Originally headquartered in Vietnam, we have expanded our business to 6 countries worldwide.
                 </p>
                 <p>Although we are a newly-formed company, our team have substantial experience in digital technology. Our ultimate goal is to present the next evolution of technology for the open internet.</p>
-
                 <p>With the motto: “Your Success is Our Success”, we strive to provide everyone with the feeling of a job well-done, both our clients and employees.</p>
               </div>
             </div>
@@ -228,7 +268,7 @@
         </div>
         <div class="section3-block">
           <div class="row">
-            <div class="col-12 col-md-3 section3-block_item">
+            <div class="col-12 col-lg-3 section3-block_item">
               <div class="card">
                 <img src="images/bg/molistar-logo.png" class="card-img-top card-img" alt="molistar">
                 <img src="images/bg/molistar-logoblack.png" class="card-img-top card-img-black" alt="molistar">
@@ -237,7 +277,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-3 section3-block_item">
+            <div class="col-12 col-lg-3 section3-block_item">
               <div class="card">
                 <img src="images/bg/molilabs-black.png" class="card-img-top card-img" alt="molistar">
                 <img src="images/bg/molilabs.png" class="card-img-top card-img-black" alt="molistar">
@@ -246,7 +286,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-3 section3-block_item">
+            <div class="col-12 col-lg-3 section3-block_item">
               <div class="card">
                 <img src="images/bg/moli-studio.png" class="card-img-top card-img" alt="molistar">
                 <img src="images/bg/moli-studio-logo-white.png" class="card-img-top card-img-black" alt="molistar">
@@ -257,7 +297,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-md-3 section3-block_item">
+            <div class="col-12 col-lg-3 section3-block_item">
               <div class="card">
                 <img src="images/bg/Moli_network.png" class="card-img-top card-img" alt="molistar">
                 <img src="images/bg/Moli_network-white.png" class="card-img-top card-img-black" alt="molistar">
@@ -266,7 +306,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-3 section3-block_item">
+            <div class="col-12 col-lg-3 section3-block_item">
               <div class="card">
                 <img src="images/bg/Adxoo.png" class="card-img-top card-img" alt="molistar">
                 <img src="images/bg/Adxoo-white.png" class="card-img-top card-img-black" alt="molistar">
@@ -275,12 +315,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-3 section3-block_item">
+            <div class="col-12 col-lg-3 section3-block_item">
               <div class="card">
                 <img src="images/bg/molicapital.png" class="card-img-top card-img" alt="molistar">
                 <img src="images/bg/molicapital-white.png" class="card-img-top card-img-black" alt="molistar">
                 <div class="card-body">
-                  <p class="card-text">An indie game studio and publishing. We are releasing original hyper-casual games while also collaborating with developers from around the world</p>
+                  <p class="card-text">Support international trade with powerful crypto application development services</p>
                 </div>
               </div>
             </div>
@@ -294,7 +334,7 @@
         <div class="section4-wrapper">
           <div class="section4-title">KEY STATS</div>
           <div class="row section4-content">
-            <div class="col-md-3">
+            <div class="col-lg-3">
               <div class="card">
                 <div class="card-body">
                   <p class="card-title">2000+</p>
@@ -308,7 +348,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3">
               <div class="card">
                 <div class="card-body">
                   <p class="card-title">85M</p>
@@ -322,7 +362,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <img class="section4-img" src="images/bg/moli-group-key-stats.png" alt="Picture">
             </div>
           </div>
@@ -376,85 +416,85 @@
           <div class="section6-title">STRATEGIC PARTNERS</div>
           <div class="section6-content">
             <div class="row">
-              <div class="col-12 col-md-4 section6-item">
+              <div class="col-12 col-lg-4 section6-item">
                 <div class="section6-item-wrapper">
                   <img src="images/bg/tiktok.png" alt="" class="section6-img">
                 </div>
               </div>
-              <div class="col-12 col-md-4 section6-item">
+              <div class="col-12 col-lg-4 section6-item">
                 <div class="section6-item-wrapper">
                   <img src="images/bg/Facebook.png" alt="" class="section6-img">
                 </div>
               </div>
-              <div class="col-12 col-md-4 section6-item">
+              <div class="col-12 col-lg-4 section6-item">
                 <div class="section6-item-wrapper">
                   <img src="images/bg/Youtube.png" alt="" class="section6-img">
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-12 col-md-4 section6-item">
+              <div class="col-12 col-lg-4 section6-item">
                 <div class="section6-item-wrapper">
                   <img src="images/bg/unity.png" alt="" class="section6-img">
                 </div>
               </div>
-              <div class="col-12 col-md-4 section6-item">
+              <div class="col-12 col-lg-4 section6-item">
                 <div class="section6-item-wrapper">
                   <img src="images/bg/mgid-logo-svg.png" alt="" class="section6-img">
                 </div>
               </div>
-              <div class="col-12 col-md-4 section6-item">
+              <div class="col-12 col-lg-4 section6-item">
                 <div class="section6-item-wrapper">
                   <img src="images/bg/VDO-1.png" alt="" class="section6-img">
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-12 col-md-4 section6-item">
+              <div class="col-12 col-lg-4 section6-item">
                 <div class="section6-item-wrapper">
                   <img src="images/bg/VTV.png" alt="" class="section6-img">
                 </div>
               </div>
-              <div class="col-12 col-md-4 section6-item">
+              <div class="col-12 col-lg-4 section6-item">
                 <div class="section6-item-wrapper">
                   <img src="images/bg/ironSource.png" alt="" class="section6-img">
                 </div>
               </div>
-              <div class="col-12 col-md-4 section6-item">
+              <div class="col-12 col-lg-4 section6-item">
                 <div class="section6-item-wrapper">
                   <img src="images/bg/AppLovin.png" alt="" class="section6-img">
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-12 col-md-4 section6-item">
+              <div class="col-12 col-lg-4 section6-item">
                 <div class="section6-item-wrapper">
                   <img src="images/bg/ICA_2122.png" alt="" class="section6-img">
                 </div>
               </div>
-              <div class="col-12 col-md-4 section6-item">
+              <div class="col-12 col-lg-4 section6-item">
                 <div class="section6-item-wrapper">
                   <img src="images/bg/THVL.png" alt="" class="section6-img">
                 </div>
               </div>
-              <div class="col-12 col-md-4 section6-item">
+              <div class="col-12 col-lg-4 section6-item">
                 <div class="section6-item-wrapper">
                   <img src="images/bg/TheAnh28.png" alt="" class="section6-img">
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-12 col-md-4 section6-item">
+              <div class="col-12 col-lg-4 section6-item">
                 <div class="section6-item-wrapper">
                   <img src="images/bg/bluewheelcapital.com_.png" alt="" class="section6-img">
                 </div>
               </div>
-              <div class="col-12 col-md-4 section6-item">
+              <div class="col-12 col-lg-4 section6-item">
                 <div class="section6-item-wrapper">
                   <img src="images/bg/VEL_1.png" alt="" class="section6-img">
                 </div>
               </div>
-              <div class="col-12 col-md-4 section6-item">
+              <div class="col-12 col-lg-4 section6-item">
                 <div class="section6-item-wrapper">
                   <img src="images/bg/OAAM_2.png" alt="" class="section6-img">
                 </div>
@@ -471,7 +511,7 @@
           <div class="section7-tittle">RECRUITMENT</div>
           <div class="section7-content">
             <div class="row">
-              <div class="col-12 col-md-4 section7-item">
+              <div class="col-12 col-lg-4 section7-item">
                 <a href="https://moligroup.co/recruitment/senior-mobile-game-marketing/">
                   <div class="card">
                     <img class="card-img-top" src="images/bg/Artboard-1.png" alt="mobile game">
@@ -481,7 +521,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-12 col-md-4 section7-item">
+              <div class="col-12 col-lg-4 section7-item">
                 <a href="https://moligroup.co/recruitment/senior-frontend-developer/">
                   <div class="card">
                       <img class="card-img-top" src="images/bg/Artboard-2.png" alt="mobile game">
@@ -491,7 +531,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-12 col-md-4 section7-item">
+              <div class="col-12 col-lg-4 section7-item">
                 <a href="https://moligroup.co/recruitment/partner-development/">
                   <div class="card">
                     <img class="card-img-top" src="images/bg/Artboard-3.png" alt="mobile game">
@@ -516,26 +556,26 @@
       <div class="container">
         <div class="section8-wrapper">
           <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
               <img class="section8-img" src="images/bg/Google-Maps.png" alt="Map">
             </div>
-            <div class="col-12 col-md-6 section8-form">
+            <div class="col-12 col-lg-6 section8-form">
               <div class="section8-form-tittle">GET IN TOUCH</div>
               <div class="section8-form-content">
                 <div class="row gy-4">
-                  <div class="col-12 col-md-6">
+                  <div class="col-12 col-lg-6">
                     <input type="email" class="form-control" placeholder="Your Name">
                   </div>
-                  <div class="col-12 col-md-6">
+                  <div class="col-12 col-lg-6">
                     <input type="email" class="form-control" placeholder="Email">
                   </div>
-                  <div class="col-12 col-md-6">
+                  <div class="col-12 col-lg-6">
                     <input type="email" class="form-control" placeholder="Phone">
                   </div>
-                  <div class="col-12 col-md-6">
+                  <div class="col-12 col-lg-6">
                     <input type="email" class="form-control" placeholder="Website">
                   </div>
-                  <div class="col-12 col-md-12">
+                  <div class="col-12 col-lg-12">
                     <textarea class="form-control" placeholder="Message"  rows="5"></textarea>
                   </div>
                 </div>
@@ -554,13 +594,13 @@
     <div class="container">
       <div class="footer-wrapper">
         <div class="row footer-title">
-          <div class="col-12 col-md-3 footer-title-item">about us</div>
-          <div class="col-12 col-md-4 footer-title-item">our location</div>
-          <div class="col-12 col-md-2 footer-title-item">ecosystem</div>
-          <div class="col-12 col-md-3 footer-title-item">quick links</div>
+          <div class="col-12 col-lg-3 footer-title-item">about us</div>
+          <div class="col-12 col-lg-4 footer-title-item">our location</div>
+          <div class="col-12 col-lg-2 footer-title-item">ecosystem</div>
+          <div class="col-12 col-lg-3 footer-title-item">quick links</div>
         </div>
         <div class="row footer-content">
-          <div class="col-12 col-md-3 footer-content-items">
+          <div class="col-12 col-lg-3 footer-content-items">
             <div class="footer-logo">
               <img src="images/bg/moli-logo-black.png" alt="moli-logo">
             </div>
@@ -578,13 +618,13 @@
             </div>
 
           </div>
-          <div class="col-12 col-md-4 footer-content-items">
+          <div class="col-12 col-lg-4 footer-content-items">
             <div class="footer-content-items-block">
               <div class="row">
-                <div class="col-6 col-md-2">
+                <div class="col-6 col-lg-2">
                   <img src="images/bg/add.png" alt="location">
                 </div>
-                <div class="col-6 col-md-10">
+                <div class="col-6 col-lg-10">
                   <div class="footer-content-items-block-tittle">MOLI GROUP JSC.</div>
                   <div  class="footer-content-items-block-content">HQ: 229/13 Tay Thanh Str., Tay Thanh Ward, Tan Phu Dist., Ho Chi Minh City, VN
                     Office: 118 Huynh Tan Phat St., District 7, Ho Chi Minh City, Vietnam
@@ -595,10 +635,10 @@
             </div>
             <div class="footer-content-items-block">
               <div class="row">
-                <div class="col-6 col-md-2">
+                <div class="col-6 col-lg-2">
                   <img src="images/bg/add.png" alt="location">
                 </div>
-                <div class="col-6 col-md-10">
+                <div class="col-6 col-lg-10">
                   <div class="footer-content-items-block-tittle">MOLI NETWORK, LLC.</div>
                   <div  class="footer-content-items-block-content">Add: 16192 Coastal Highway, Lewes, Delaware 19958, United States
                     <p>Phone: +1 302 918 5489</p>
@@ -608,10 +648,10 @@
             </div>
             <div class="footer-content-items-block">
               <div class="row">
-                <div class="col-6 col-md-2">
+                <div class="col-6 col-lg-2">
                   <img src="images/bg/add.png" alt="location">
                 </div>
-                <div class="col-6 col-md-10">
+                <div class="col-6 col-lg-10">
                   <div class="footer-content-items-block-tittle">MOLI DIGITAL PTE.</div>
                   <div  class="footer-content-items-block-content">Add: 3F., No. 4, Ln. 99, Ruida st., Fengshan dist., Kaohsiung city 830, Taiwan
                     <p>Phone: +00886903618128</p>
@@ -621,10 +661,10 @@
             </div>
             <div class="footer-content-items-block">
               <div class="row">
-                <div class="col-6 col-md-2">
+                <div class="col-6 col-lg-2">
                   <img src="images/bg/add.png" alt="location">
                 </div>
-                <div class="col-6 col-md-10">
+                <div class="col-6 col-lg-10">
                   <div class="footer-content-items-block-tittle">ADXOO PTE. LTD.</div>
                   <div  class="footer-content-items-block-content">Add: 1 Raffles Place, #40-02, One Raffles Place Tower 1, Singapore 048616
                     <p>Phone: +653138867</p>
@@ -634,7 +674,7 @@
             </div>
 
           </div>
-          <div class="col-12 col-md-2 footer-content-items">
+          <div class="col-12 col-lg-2 footer-content-items">
             <div class="footer-content-items-tittle">
               <a href="">moli star</a>
             </div>
@@ -663,10 +703,10 @@
               <a href="">moli booking</a>
             </div>
             <div class="footer-content-items-tittle">
-              <a href="">lamdepstore</a>
+              <a href="">lalgepstore</a>
             </div>
           </div>
-          <div class="col-12 col-md-3 footer-content-items">
+          <div class="col-12 col-lg-3 footer-content-items">
             <div class="footer-content-items-tittle">
               <a href="https://moligroup.co/news/">news</a>
             </div>

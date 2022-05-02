@@ -6,12 +6,48 @@ $color-header: rgba(#696687,0.1);
 $header-hover: #ee0000;
 
 .header {
-  text-align: center;
   background-color: $color-header;
   .header-wrapper {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 80%;
+    .menu-mb {
+      .btn-primary {
+        background-color: rgba(255, 255, 255);
+        color: black;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 10%;
+      }
+
+      //Dich nut dong menu sang phai
+      .offcanvas-header {
+        justify-content: flex-end;
+      }
+
+      .mobile-menu {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .mobile-menu_line {
+          list-style: none;
+
+          .mobile-menu-line_text {
+            text-decoration: none;
+            color: #1a1e21;
+            text-transform: uppercase;
+            font-weight: 700;
+          }
+        }
+        .mobile-menu_line:hover {
+          background-color: $header-hover
+        }
+      }
+      @include media-breakpoint-up(xl) {
+        display: none;
+      }
+    }
     .header-nav {
       .header-logo {
         .header-logo_img {
@@ -79,6 +115,10 @@ $header-hover: #ee0000;
             }
           }
         }
+      }
+      @media (max-width: 1024px)
+      {
+        display: none;
       }
     }
   }

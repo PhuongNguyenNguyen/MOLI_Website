@@ -10,6 +10,10 @@ $background-color: rgba(#696687,0.1);
 
 .main{
   background-color: $background-color;
+  .section-common
+  {
+    padding: 0 30px;
+  }
 }
 
 .section1
@@ -88,11 +92,21 @@ $background-color: rgba(#696687,0.1);
       .background
       {
         position: relative;
+        @media (max-width: 768px)
+        {
+          display: none;
+        }
       }
       .img-content{
         display: flex;
         justify-items: center;
         position: absolute;
+        @media (max-width: 768px)
+        {
+          position: relative;
+          flex-direction: column;
+          align-items: center;
+        }
         height: 100%;
         top: 0;
         .content
@@ -105,6 +119,10 @@ $background-color: rgba(#696687,0.1);
         .section2-img
         {
           height: 100%;
+          @media (max-width: 768px)
+          {
+            width: 100%;
+          }
         }
       }
     }
@@ -133,7 +151,7 @@ $background-color: rgba(#696687,0.1);
         height: 217px;
         border-radius: 1rem;
         .card-img-top {
-          width: 45%;
+          width: 40%;
           position: relative;
           padding-top: 10%;
         }
@@ -144,7 +162,7 @@ $background-color: rgba(#696687,0.1);
 
         .card-img-black {
           position: absolute;
-          top: 0;
+          top: -10px;
           display: none;
         }
 
@@ -185,7 +203,7 @@ $background-color: rgba(#696687,0.1);
     }
     .section4-content
     {
-      .col-md-3
+      .col-lg-3
       {
         .card
         {
@@ -209,7 +227,7 @@ $background-color: rgba(#696687,0.1);
           }
         }
       }
-      .col-md-6
+      .col-lg-6
       {
         .section4-img
         {
@@ -271,6 +289,10 @@ $background-color: rgba(#696687,0.1);
     /* Place the container to the left */
     .left {
       left: -25%;
+      @media (max-width: 767px)
+      {
+        left: 1%;
+      }
       h2
       {
         color: $primary-color;
@@ -279,6 +301,7 @@ $background-color: rgba(#696687,0.1);
       {
         color: $primary-color;
         font-weight: 500;
+        font-size: 0.9rem;
       }
     }
     .left::after
@@ -297,6 +320,7 @@ $background-color: rgba(#696687,0.1);
       .section5-company_name
       {
         font-weight: 500;
+        font-size: 0.9rem;
       }
     }
     .right:after
@@ -375,7 +399,7 @@ $background-color: rgba(#696687,0.1);
 
       /* Make all right containers behave like the left ones */
       .right {
-        left: 0;
+        left: 1%;
       }
     }
   }
