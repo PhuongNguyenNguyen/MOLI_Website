@@ -11234,6 +11234,7 @@ Content
 .section1 .section1-wrapper .section1-js .slick-slide .section1-js-text .section1-js-text_tittle {
   font-size: 4.5rem;
   font-weight: 600;
+  width: 70%;
 }
 .section1 .section1-wrapper .section1-js .slick-slide .section1-js-text .section1-js-text_subtittle {
   font-size: 1.3rem;
@@ -11242,6 +11243,7 @@ Content
 .section1 .section1-wrapper .section1-js .slick-slide .section1-js-link {
   width: fit-content;
   position: relative;
+  width: 100%;
 }
 .section1 .section1-wrapper .section1-js .slick-slide .section1-js-link .section1-js-img {
   transition: all 8s;

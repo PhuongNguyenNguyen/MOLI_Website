@@ -36,6 +36,7 @@ $background-color: rgba(#696687,0.1);
           .section1-js-text_tittle {
             font-size: 4.5rem;
             font-weight: 600;
+            width: 70%;
           }
 
           .section1-js-text_subtittle {
@@ -48,6 +49,7 @@ $background-color: rgba(#696687,0.1);
         .section1-js-link {
           width: fit-content;
           position: relative;
+          width: 100%;
 
           .section1-js-img {
             transition: all 8s; /* Animation */
