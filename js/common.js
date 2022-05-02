@@ -33,7 +33,7 @@ if (Modernizr.touch === true && window.innerWidth <= 767) {
     return scrollbarWidth
   }
 
-  function section1slick() {
+  /*function section1slick() {
     $('.section1-js').slick({
       dots: true,
       infinite: true,
@@ -73,11 +73,26 @@ if (Modernizr.touch === true && window.innerWidth <= 767) {
         // instead of a settings object
       ]
     });
+  }*/
+
+  function section1_2slick()
+  {
+    $('.section1-js').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      autoplay: true,
+      autoplaySpeed: 3000,
+    });
+
   }
 
   function init() {
     getBarwidth()
-    section1slick()
+//    section1slick()
+    section1_2slick()
   }
 
   init()
