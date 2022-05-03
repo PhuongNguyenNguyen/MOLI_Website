@@ -11270,6 +11270,11 @@ Content
   align-items: center;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .section1 .section1-wrapper .section1-js .slick-slide .section1-js-text {
+    display: none;
+  }
+}
 .section1 .section1-wrapper .section1-js .slick-slide .section1-js-text .section1-js-text_tittle {
   font-size: 4.5rem;
   font-weight: 600;
@@ -11598,6 +11603,11 @@ Content
   width: 100%;
   height: 100%;
 }
+@media (max-width: 320px) {
+  .section6 .container .section6-wrapper .section6-content .row .section6-item .section6-item-wrapper {
+    width: 70px;
+  }
+}
 .section6 .container .section6-wrapper .section6-content .row .section6-item:hover .section6-item-wrapper .section6-img {
   filter: grayscale(0);
 }
@@ -11677,6 +11687,9 @@ Content
   padding: 15px 30px;
 }
 
+/* ==========================================================================
+Footer
+========================================================================== */
 .footer {
   background-color: #000000;
 }
@@ -11687,17 +11700,15 @@ Content
 .footer .container .footer-wrapper {
   width: 85%;
 }
-.footer .container .footer-wrapper .footer-title {
+.footer .container .footer-wrapper .footer-content {
   padding: 20px 0;
 }
-.footer .container .footer-wrapper .footer-title .footer-title-item {
+.footer .container .footer-wrapper .footer-content .footer-title {
+  padding: 20px 0;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 20px;
-}
-.footer .container .footer-wrapper .footer-content {
-  padding: 20px 0;
 }
 .footer .container .footer-wrapper .footer-content .footer-content-items {
   color: #ffffff;
@@ -11755,8 +11766,4 @@ Content
   text-align: center;
   padding: 20px 0;
 }
-
-/* ==========================================================================
-Footer
-========================================================================== */
 /*# sourceMappingURL=style.css.map */

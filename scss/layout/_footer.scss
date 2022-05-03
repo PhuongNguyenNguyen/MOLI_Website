@@ -1,3 +1,97 @@
 /* ==========================================================================
 Footer
 ========================================================================== */
+.footer
+{
+  background-color: $black-color;
+  .container {
+    display: flex;
+    justify-content: center;
+    .footer-wrapper {
+      width: 85%;
+      .footer-content {
+        padding: 20px 0;
+        .footer-title {
+          padding: 20px 0;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 20px;
+        }
+        .footer-content-items {
+          color: #ffffff;
+          .footer-logo {
+            padding: 10px 0;
+          }
+
+          .footer-content-items_text {
+            padding: 10px 0;
+          }
+
+          .footer-content-connect {
+            .footer-content-connect_wrapper {
+              .connect-tittle {
+                font-size: 20px;
+                font-weight: 600;
+                text-transform: uppercase;
+                padding-bottom: 10px;
+              }
+
+              .connect-icon {
+                display: flex;
+                justify-content: space-around;
+                width: 30%;
+
+                a {
+                  color: #ffffff;
+                }
+              }
+            }
+          }
+
+          .footer-content-items-block {
+            padding: 10px 0;
+
+            .footer-content-items-block-tittle {
+              font-size: 18px;
+              text-transform: uppercase;
+            }
+
+            .footer-content-items-block-content {
+              font-size: 14px;
+
+              p {
+                margin-bottom: 0;
+              }
+            }
+
+            .footer-content-items-block-content p:hover {
+              color: $primary-color;
+            }
+          }
+
+          .footer-content-items-tittle {
+            font-size: 16px;
+            text-transform: uppercase;
+            padding: 2px;
+
+            a {
+              text-decoration: none;
+              color: #ffffff;
+            }
+          }
+
+          .footer-content-items-tittle a:hover {
+            color: $primary-color;
+          }
+        }
+      }
+
+      .footer-copyright {
+        color: #ffffff;
+        text-align: center;
+        padding: 20px 0;
+      }
+    }
+  }
+}
