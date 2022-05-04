@@ -11730,17 +11730,19 @@ Content
   position: fixed;
   bottom: 20px;
   right: 30px;
+  padding: 10px 15px;
   z-index: 99;
-  border: none;
+  border: 1px solid;
   outline: none;
-  color: white;
+  color: black;
   cursor: pointer;
   border-radius: 4px;
-  padding: 0 0;
+  background-color: #ffffff;
 }
 
 #myBtn:hover {
   background-color: #000000;
+  color: white;
 }
 
 /* ==========================================================================
