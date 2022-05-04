@@ -2,7 +2,7 @@
 Header
 ========================================================================== */
 
-$color-header: rgba(#696687,0.1);
+$color-header: rgba(#696687, 0.1);
 $header-hover: #ee0000;
 
 .header {
@@ -41,7 +41,7 @@ $header-hover: #ee0000;
           }
         }
         .mobile-menu_line:hover {
-          background-color: $header-hover
+          background-color: $header-hover;
         }
       }
       @include media-breakpoint-up(xl) {
@@ -84,8 +84,7 @@ $header-hover: #ee0000;
                 box-shadow: none;
               }
             }
-            .btn-secondary
-            {
+            .btn-secondary {
               background-color: #f0f0f0;
             }
 
@@ -116,8 +115,7 @@ $header-hover: #ee0000;
           }
         }
       }
-      @media (max-width: 1024px)
-      {
+      @media (max-width: 1024px) {
         display: none;
       }
     }

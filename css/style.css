@@ -11322,7 +11322,7 @@ Content
 }
 .section2 .section2-wrapper .section2-title {
   text-align: center;
-  color: #CC0033;
+  color: #cc0033;
   font-weight: 600;
   font-size: 2rem;
   padding: 40px;
@@ -11373,7 +11373,7 @@ Content
 }
 .section3 .section3-tittle {
   text-align: center;
-  color: #CC0033;
+  color: #cc0033;
   font-weight: 500;
   padding: 40px 0;
   font-size: 2rem;
@@ -11423,7 +11423,7 @@ Content
 
 .section4 .section4-wrapper .section4-title {
   text-align: center;
-  color: #CC0033;
+  color: #cc0033;
   font-weight: 500;
   padding: 40px 0;
   font-size: 2rem;
@@ -11440,7 +11440,7 @@ Content
   font-weight: 600;
 }
 .section4 .section4-wrapper .section4-content .col-lg-3 .card .card-body .card-text {
-  color: #3A3564;
+  color: #3a3564;
   font-size: 18px;
 }
 .section4 .section4-wrapper .section4-content .col-lg-6 .section4-img {
@@ -11461,7 +11461,7 @@ Content
 }
 .section5 .section5-wrapper .section5-title {
   text-align: center;
-  color: #CC0033;
+  color: #cc0033;
   font-weight: 500;
   padding: 40px 0;
   font-size: 2rem;
@@ -11506,15 +11506,15 @@ Content
   }
 }
 .section5 .section5-wrapper .left h2, .section5 .section5-wrapper .left .h2 {
-  color: #CC0033;
+  color: #cc0033;
 }
 .section5 .section5-wrapper .left .section5-company_name {
-  color: #CC0033;
+  color: #cc0033;
   font-weight: 500;
   font-size: 0.9rem;
 }
 .section5 .section5-wrapper .left::after {
-  background-color: #CC0033;
+  background-color: #cc0033;
 }
 .section5 .section5-wrapper .right {
   left: 25%;
@@ -11584,7 +11584,8 @@ Content
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
   }
-  .section5 .section5-wrapper .left::after, .section5 .section5-wrapper .right::after {
+  .section5 .section5-wrapper .left::after,
+.section5 .section5-wrapper .right::after {
     left: 15px;
   }
   .section5 .section5-wrapper .right {
@@ -11601,7 +11602,7 @@ Content
 }
 .section6 .container .section6-wrapper .section6-title {
   text-align: center;
-  color: #CC0033;
+  color: #cc0033;
   font-weight: 500;
   padding: 20px 0;
   font-size: 2rem;
@@ -11638,7 +11639,7 @@ Content
 }
 .section7 .container .section7-wrapper .section7-tittle {
   text-align: center;
-  color: #CC0033;
+  color: #cc0033;
   font-weight: 500;
   padding: 40px 0;
   font-size: 2rem;
@@ -11658,7 +11659,7 @@ Content
   justify-content: center;
 }
 .section7 .container .section7-btn .btn {
-  background-color: #CC0033;
+  background-color: #cc0033;
   margin: 40px 0;
   border: none;
 }
@@ -11684,7 +11685,7 @@ Content
 }
 .section8 .container .section8-wrapper .row .section8-form .section8-form-tittle {
   text-align: center;
-  color: #CC0033;
+  color: #cc0033;
   font-weight: 500;
   padding: 10px 0;
   font-size: 2rem;
@@ -11694,7 +11695,7 @@ Content
   justify-content: center;
 }
 .section8 .container .section8-wrapper .row .section8-form .section8-form-btn .btn {
-  background-color: #CC0033;
+  background-color: #cc0033;
   margin: 40px 0;
   border: none;
   border-radius: 10px;
@@ -11764,7 +11765,7 @@ Footer
   margin-bottom: 0;
 }
 .footer .container .footer-wrapper .footer-content .footer-content-items .footer-content-items-block .footer-content-items-block-content p:hover {
-  color: #CC0033;
+  color: #cc0033;
 }
 .footer .container .footer-wrapper .footer-content .footer-content-items .footer-content-items-tittle {
   font-size: 16px;
@@ -11776,7 +11777,7 @@ Footer
   color: #ffffff;
 }
 .footer .container .footer-wrapper .footer-content .footer-content-items .footer-content-items-tittle a:hover {
-  color: #CC0033;
+  color: #cc0033;
 }
 .footer .container .footer-wrapper .footer-copyright {
   color: #ffffff;
