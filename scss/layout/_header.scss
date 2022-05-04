@@ -11,6 +11,21 @@ $header-hover: #ee0000;
     padding-top: 20px;
     padding-bottom: 20px;
     width: 80%;
+    @media (max-width: 1024px) {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .header-logo {
+      .header-logo_img {
+        height: 48px;
+        display: none;
+        @media (max-width: 1024px) {
+          display: block;
+        }
+      }
+    }
     .menu-mb {
       .btn-primary {
         background-color: rgba(255, 255, 255);

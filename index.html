@@ -121,6 +121,11 @@
   <header class='header'>
     <div class="container">
       <div class="header-wrapper">
+        <div class="header-logo">
+          <a class="header-logo_link" href="" target="_blank">
+            <img class="header-logo_img" src="images/bg/moli-logo.png" alt="MOLI-LOGO">
+          </a>
+        </div>
         <div class="menu-mb">
           <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
             <i class="fas fa-bars"></i>
@@ -206,8 +211,7 @@
   </header>
 
   <main class='main' id='main'>
-    <div class="section1 section-common">
-      <div class="container">
+    <div class="section1">
         <div class="section1-wrapper">
           <div class="section1-js">
             <div>
@@ -234,7 +238,6 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
 
     <div class="section2 section-common">
@@ -588,6 +591,8 @@
         </div>
       </div>
     </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/bg/scroll.png"></button>
   </main>
 
   <footer class='footer'>
@@ -741,6 +746,28 @@
   <!--<script src="dist/app.min.js"></script>-->
   <script src='js/common.js'></script>
   <script src='customs/script.js'></script>
+
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
   <!-- End JavaScript -->
 </body>
 </html>
